@@ -55,7 +55,7 @@
     }
 
     form {
-      max-width: 100vw;
+      max-width: 80vw;
       padding: 20px;
       border-radius: 6px;
       background: #fff;
@@ -82,7 +82,7 @@
     }
 
     .language {
-      margin-left: 93%;
+      margin-left: 90%;
     }
 
     input,
@@ -253,6 +253,7 @@
     #languageCom {
       margin-left: 8%;
     }
+
     #nights {
       margin-left: 8%;
     }
@@ -284,176 +285,182 @@
 </head>
 
 <body>
-  <div class="x">
-    <form>
-      <div class="banner">
-        <h1>Hotel Reservation Form</h1>
-      </div>
-      <br />
-      <div class="language">
-        <h4>Language</h4>
-        <select>
-          <option value="EN">EN</option>
-          <option value="ES">ES</option>
-          <option value="PT">PT</option>
-          <option value="CAT">CAT</option>
-          <option value="IT">IT</option>
-          <option value="FR">FR</option>
-          <option value="GE">GE</option>
-          <option value="RU">RU</option>
-        </select>
-      </div>
-      <fieldset>
-        <legend>Reservation Details</legend>
-        <h2>Contact </h2>
-        <div class="columns">
-          <div class="item">
-            <label for="fname">Contact Name<span>*</span></label>
-            <input id="fname" type="text" name="fname" />
-          </div>
-          <div class="item">
-            <label for="lname"> Contact Last Name<span>*</span></label>
-            <input id="lname" type="text" name="lname" />
-          </div>
-
-          <div class="item">
-            <label for="eaddress">Email Address<span>*</span></label>
-            <input id="eaddress" type="text" name="eaddress" />
-          </div>
-          <div class="item">
-            <label for="phone">Phone<span>*</span></label>
-            <input id="phone" type="tel" name="phone" />
-          </div>
-      </fieldset>
-      <br />
-      <fieldset>
-        <legend>Booking Information</legend>
-        <div class="columns">
-          <div class="item">
-            <label for="address">Hotel's Name<span>*</span></label>
-            <input id="address" type="text" name="address" />
-          </div>
-          <div class="item">
-            <label for="Country">Country<span>*</span></label>
-            <input id="Country" type="text" name="Country" />
-          </div>
-          <div class="item">
-            <label for="checkindate">Check-in Date <span>*</span></label>
-            <input id="checkindate" type="date" name="checkindate" />
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="item">
-            <label for="checkoutdate">Check-out Date <span>*</span></label>
-            <input id="checkoutdate" type="date" name="checkoutdate" />
-            <i class="fas fa-calendar-alt"></i>
-          </div>
-          <div class="item">
-            <p id="nights">Select Nights </p>
-            <input type="text">
-          </div>
-          <div class="item">
-            <p id="languageCom">Prefered Language</p>
-            <select>
-              <option value="14" disabled selected>Language for comunications</option>
-              <option value="15">EN</option>
-              <option value="16">ES</option>
-              <option value="17">PT</option>
-              <option value="18">CAT</option>
-              <option value="19">IT</option>
-              <option value="20">FR</option>
-              <option value="21">GE</option>
-              <option value="22">RU</option>
-            </select>
-          </div>
-          <div class="item" style="width:48%">
-            <label for="room">Number of rooms</label>
-            <input id="room" type="number" name="room" />
-          </div>
-          <div class="item">
-            <label for="currency">Currency</label>
-            <select>
-              <option value="23" disabled selected>Currency you will pay</option>
-              <option value="24">USD</option>
-              <option value="25">EUR</option>
-              <option value="26">GBP</option>
-              <option value="27">CAD</option>
-            </select>
-          </div>
+  <form>
+    <div class="banner">
+      <h1>Hotel Reservation Form</h1>
+    </div>
+    <br />
+    <div class="language">
+      <h4>Language</h4>
+      <select>
+        <option value="EN">EN</option>
+        <option value="ES">ES</option>
+        <option value="PT">PT</option>
+        <option value="CAT">CAT</option>
+        <option value="IT">IT</option>
+        <option value="FR">FR</option>
+        <option value="GE">GE</option>
+        <option value="RU">RU</option>
+      </select>
+    </div>
+    <fieldset>
+      <legend>Reservation Details</legend>
+      <h2>Contact </h2>
+      <div class="columns">
+        <div class="item">
+          <label for="fname">Contact Name<span>*</span></label>
+          <input id="fname" type="text" name="fname" required />
         </div>
-      </fieldset>
-      </br>
-      <fieldset>
-        <h2>More Information </h2>
-        <div class="columns">
-          <div class="item">
-            <p>How many adults are coming?</p>
-            <select>
-              <option value="1" disabled selected>Number of adults</option>
-              <option value="2">1</option>
-              <option value="3">2</option>
-              <option value="4">3</option>
-              <option value="5">4</option>
-              <option value="6">5</option>
-            </select>
-          </div>
-          <div class="item">
-            <p>How many children are coming?</p>
-            <select>
-              <option value="7" disabled selected>Number of children</option>
-              <option value="8">0</option>
-              <option value="9">1</option>
-              <option value="10">2</option>
-              <option value="11">3</option>
-            </select>
-          </div>
-          <div class="item">
-            <p>Are there minors?</p>
-            <select>
-              <option value="14">No</option>
-              <option value="15">Yes</option>
-            </select>
-          </div>
-
-          <div class="item" style=width:100%>
-            <label for="room">How many minors</label>
-            <input id="room" type="number" name="room" max="3" />
-          </div>
-          <div class="columns">
-            <div class="item" style=width:100%>
-              <label for="docChildren">Documentation of the contact 1</label>
-              <input id="docChildren" type="input" name="docChildren" />
-            </div>
-            <div class="item" style=width:100%>
-              <label for="docChildren2">Documentation of the contact 2</label>
-              <input id="docChildren2" type="input" name="docChildren" />
-            </div>
-            <div class="item" style=width:100%>
-              <label for="docChildren3">Documentation of the contact 3 </label>
-              <input id="docChildren3" type="input" name="docChildren" />
-            </div>
-          </div>
-
-          <div class="columns">
-            <div class="item" style=width:100%>
-              <label for="docChildren">Documentation of the children 1</label>
-              <input id="docChildren" type="input" name="docChildren" />
-            </div>
-            <div class="item" style=width:100%>
-              <label for="docChildren2">Documentation of the children 2</label>
-              <input id="docChildren2" type="input" name="docChildren" />
-            </div>
-            <div class="item" style=width:100%>
-              <label for="docChildren3">Documentation of the children 3 </label>
-              <input id="docChildren3" type="input" name="docChildren" />
-            </div>
-          </div>
+        <div class="item">
+          <label for="lname"> Contact Last Name<span>*</span></label>
+          <input id="lname" type="text" name="lname" required />
         </div>
-  </div>
-  </fieldset>
-  <br />
-  <div class="btn-block">
-    <button type="submit" href="/">Submit</button>
-  </div>
+
+        <div class="item">
+          <label for="eaddress">Email Address<span>*</span></label>
+          <input id="eaddress" type="text" name="eaddress" required />
+        </div>
+        <div class="item">
+          <label for="phone">Phone<span>*</span></label>
+          <input id="phone" type="tel" name="phone" required />
+        </div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>Booking Information</legend>
+      <div class="columns">
+        <div class="item">
+          <label for="address">Hotel's Name</label>
+          <select>
+            <option value="14" disabled selected>Pick one of our hotels</option>
+            <option value="15">Habana Grand Club</option>
+            <option value="16">Farol 3</option>
+            <option value="17">Schultz Hotel</option>
+            <option value="18">Autumn Arc Resort</option>
+            <option value="19">Rose Ridge Hotel</option>
+            <option value="20">Prince's Seashore Resort </option>
+            <option value="21">Oriental Thicket Resort </option>
+            <option value="22">Ivory Pool Resort</option>
+            <option value="17">Hotel San Francisco</option>
+            <option value="18">Hotel Eurostars Cristal Palace</option>
+            <option value="19">Hotel AA Viladomat </option>
+            <option value="20">Hotel NH Collection Barcelona Constanza</option>
+            <option value="21">Twin Gulf Hotel</option>
+            <option value="22">Crown Hotel </option>
+            <option value="17">Silver Angel Hotel </option>
+            <option value="18">Shoreline Resort</option>
+            <option value="19">Breakwater Hotel</option>
+            <option value="20">Excursion Hotel </option>
+            <option value="21">Private Cloak Resort </option>
+          </select>
+        </div>
+        <div class="item">
+          <label for="Country">Restaurant<span>*</span></label>
+          <select>
+            <option value="14" disabled selected>In Which time stamp Do you want to eat</option>
+            <option value="15">Morning</option>
+            <option value="16">Evening</option>
+            <option value="16">Night</option>
+          </select>
+        </div>
+        <div class="item">
+          <label for="checkindate">Check-in Date <span>*</span></label>
+          <input id="checkindate" type="date" name="checkindate" />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <label for="checkoutdate">Check-out Date <span>*</span></label>
+          <input id="checkoutdate" type="date" name="checkoutdate" />
+          <i class="fas fa-calendar-alt"></i>
+        </div>
+        <div class="item">
+          <label for="label">How many nights are you staying</label>
+          <input type="text">
+        </div>
+        <div class="item">
+          <label for="label">Prefered Language</label>
+          <select>
+            <option value="14" disabled selected>Language for comunications</option>
+            <option value="15">EN</option>
+            <option value="16">ES</option>
+            <option value="17">PT</option>
+            <option value="18">CAT</option>
+            <option value="19">IT</option>
+            <option value="20">FR</option>
+            <option value="21">GE</option>
+            <option value="22">RU</option>
+          </select>
+        </div>
+        <div class="item" style="width:48%">
+          <label for="room">Number of rooms</label>
+          <input id="room" type="number" name="room" />
+        </div>
+        <div class="item">
+          <label for="currency">Currency</label>
+          <select>
+            <option value="23" disabled selected>Currency you will pay</option>
+            <option value="24">USD</option>
+            <option value="25">EUR</option>
+            <option value="26">GBP</option>
+            <option value="27">CAD</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+    </br>
+    <fieldset>
+      <h2>More Information </h2>
+      <div class="columns">
+        <div class="item">
+          <p>How many adults are coming?</p>
+          <select>
+            <option value="1" disabled selected>Number of adults</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>How many children are coming?</p>
+          <select>
+            <option value="7" disabled selected>Number of children</option>
+            <option value="8">0</option>
+            <option value="9">1</option>
+            <option value="10">2</option>
+            <option value="11">3</option>
+          </select>
+        </div>
+        <div class="item">
+          <p>Are there minors?</p>
+          <select>
+            <option value="14">No</option>
+            <option value="15">Yes</option>
+          </select>
+        </div>
+        <div class="item" style=width:45%>
+          <label for="room">How many minors</label>
+          <input id="room" type="number" name="room" max="3" />
+        </div>
+        <div class="item" style=width:45%>
+          <label for="docChildren">Documentation of the contact </label>
+          <input id="docChildren" type="input" name="docChildren" required />
+        </div>
+        <div class="item" style=width:45%>
+          <label for="docChildren2">Documentation of one children </label>
+          <input id="docChildren2" type="input" name="docChildren" required />
+        </div>
+        <div class="item" style=width:45%>
+          <label for="docChildren3">Documentation minors </label>
+          <input id="docChildren3" type="input" name="docChildren" />
+        </div>
+      </div>
+    </fieldset>
+    <br />
+    <div class="btn-block">
+      <button type="submit" href="/">Submit</button>
+    </div>
   </form>
   </div>
 </body>
