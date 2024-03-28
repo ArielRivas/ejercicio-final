@@ -2,19 +2,19 @@ HotelID,Hotel,Country,Language,Address,City,PostalCode,Phone,EmailAddress,Accept
 HGC001,Habana Grand Club,USA,EN,Main Avenue 134,San Diego,91911,5555425155155,booking_habana@email.com,USD
 FA30002,Farol 3,Portugal,PT,Luciano Cordeiro 78,Lisboa,658723,52655454,booking_farol3@email.com,EUR
 STZ003,Schultz Hotel,Germany,GE,Stralauer Platz 36,Berlin,10243,9354655185,booking.schultz@email.com,EUR
-HGC002,Habana Grand Club,UK,EN,Main Avenue 135,San Diego,91912,5555425155156,booking_habana@email.com,GBP
-FA30003,Farol 4,Rusia,RU,Luciano Cordeiro 79,Lisboa,658724,52655455,booking_farol3@email.com,RUB
-STZ004,Schultz Hotel,Francia,FR,Stralauer Platz 37,Berlin,10244,9354655186,booking.schultz@email.com,EUR
-HGC003,Habana Grand Club,USA,EN,Main Avenue 136,San Diego,91913,5555425155157,booking_habana@email.com,USD
-FA30004,Farol 5,Portugal,PT,Luciano Cordeiro 80,Lisboa,658725,52655456,booking_farol3@email.com,EUR
-STZ005,Schultz Hotel,España,ES,Stralauer Platz 38,Berlin,10245,9354655187,booking.schultz@email.com,USD/EUR
-HGC004,Habana Grand Club,España,ES,Main Avenue 137,San Diego,91914,5555425155158,booking_habana@email.com,EUR
-FA30005,Farol 6,España,ES,Luciano Cordeiro 81,Lisboa,658726,52655457,booking_farol3@email.com,EUR
-STZ006,Schultz Hotel,España,ES,Stralauer Platz 39,Berlin,10246,9354655188,booking.schultz@email.com,EUR
-HGC005,Habana Grand Club,USA,EN,Main Avenue 138,San Diego,91915,5555425155159,booking_habana@email.com,CAD
-FA30006,Farol 7,Canadá,FR,Luciano Cordeiro 82,Lisboa,658727,52655458,booking_farol3@email.com,EUR
-STZ007,Schultz Hotel,Germany,GE,Stralauer Platz 40,Berlin,10247,9354655189,booking.schultz@email.com,USD
-HGC006,Habana Grand Club,USA,EN,Main Avenue 139,San Diego,91916,5555425155160,booking_habana@email.com,USD
-FA30007,Farol 8,Canadá,EN,Luciano Cordeiro 83,Lisboa,658728,52655459,booking_farol3@email.com,CAD
-STZ008,Schultz Hotel,UK,EN,Stralauer Platz 41,Berlin,10248,9354655190,booking.schultz@email.com,GBP
-HGC007,Habana Grand Club,USA,EN,Main Avenue 140,San Diego,91917,5555425155161,booking_habana@email.com,USD
+HGC002,Autumn Arc Resort,UK,EN,Main Avenue 135,San Diego,91912,5555425155156,booking_habana@email.com,GBP
+FA30003,Rose Ridge Hotel ,Rusia,RU,Luciano Cordeiro 79,Lisboa,658724,52655455,booking_farol3@email.com,RUB
+STZ004,Prince's Seashore Resort ,Francia,FR,Stralauer Platz 37,Berlin,10244,9354655186,booking.schultz@email.com,EUR
+HGC003,Oriental Thicket Resort ,USA,EN,Main Avenue 136,San Diego,91913,5555425155157,booking_habana@email.com,USD
+FA30004,Ivory Pool Resort,Portugal,PT,Luciano Cordeiro 80,Lisboa,658725,52655456,booking_farol3@email.com,EUR
+STZ005,Hotel San Francisco,España,ES,Stralauer Platz 38,Berlin,10245,9354655187,booking.schultz@email.com,USD/EUR
+HGC004,Hotel Eurostars Cristal Palace,España,ES,Main Avenue 137,San Diego,91914,5555425155158,booking_habana@email.com,EUR
+FA30005,Hotel AA Viladomat ,España,ES,Luciano Cordeiro 81,Lisboa,658726,52655457,booking_farol3@email.com,EUR
+STZ006,Hotel NH Collection Barcelona Constanza,España,ES,Stralauer Platz 39,Berlin,10246,9354655188,booking.schultz@email.com,EUR
+HGC005,Twin Gulf Hotel,USA,EN,Main Avenue 138,San Diego,91915,5555425155159,booking_habana@email.com,CAD
+FA30006,Crown Hotel ,Canadá,FR,Luciano Cordeiro 82,Lisboa,658727,52655458,booking_farol3@email.com,EUR
+STZ007,Silver Angel Hotel ,Germany,GE,Stralauer Platz 40,Berlin,10247,9354655189,booking.schultz@email.com,USD
+HGC006,Shoreline Resort,USA,EN,Main Avenue 139,San Diego,91916,5555425155160,booking_habana@email.com,USD
+FA30007,Breakwater Hotel,Canadá,EN,Luciano Cordeiro 83,Lisboa,658728,52655459,booking_farol3@email.com,CAD
+STZ008,Excursion Hotel ,UK,EN,Stralauer Platz 41,Berlin,10248,9354655190,booking.schultz@email.com,GBP
+HGC007,Private Cloak Resort ,USA,EN,Main Avenue 140,San Diego,91917,5555425155161,booking_habana@email.com,USD
