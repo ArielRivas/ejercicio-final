@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <title>MOA Hotels booking form</title>
+  <title>MOA Hotels booking form
+  </title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -19,13 +20,13 @@
     select,
     label {
       padding: 0;
-      margin-left: 8%;
       outline: none;
       font-family: Roboto, Arial, sans-serif;
       font-size: 14px;
       color: #19518c;
       line-height: 22px;
       margin-right: 8%;
+      margin-left: 8%;
     }
 
     h1 {
@@ -35,7 +36,6 @@
       color: #fff;
       z-index: 2;
       line-height: 83px;
-
     }
 
     legend {
@@ -55,11 +55,12 @@
     }
 
     form {
-      max-width: 80vw;
+      max-width: 600px;
       padding: 20px;
       border-radius: 6px;
       background: #fff;
       box-shadow: 0 0 8px #19518c;
+      margin-left: 2%;
     }
 
     .banner {
@@ -71,7 +72,6 @@
       align-items: center;
       text-align: center;
     }
-
 
     .language {
       margin-left: 90%;
@@ -168,7 +168,6 @@
       display: none;
     }
 
-
     label.radio {
       position: relative;
       display: inline-block;
@@ -251,34 +250,29 @@
       margin-left: 8%;
     }
 
-    .image-carousel img,
-    picture,
-    svg,
-    video {
-      display: block;
+    select {
+      max-width: 185px;
+    }
+
+    label {
+      font-size: 12px;
+    }
+
+    img {
       max-width: 100%;
+      height: auto;
+
     }
 
     .image-carousel {
-      width: 100%;
-      height: 20em;
-      display: flex;
-      overflow-y: hidden;
-      overflow-x: scroll;
-    }
-
-    .overlay-text {
       position: absolute;
-      top: 90%;
-      left: 10%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      padding: 10px 20px;
-      font-size: 20px;
-      text-align: center;
-      z-index: 10;
+      left: 900px;
+      top: 7px;
+      scroll-behavior: smooth;
+      overflow-y: auto;
+      height: 118%;
+      overflow-x: hidden;
     }
-
 
     @media (min-width: 568px) {
 
@@ -308,65 +302,12 @@
 
 <body>
   <form>
-    <div class="banner">
-      <h1>Hotel Reservation Form</h1>
-      <div class="image-carousel">
-        <img
-          src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Habana grand club">
-        <img
-          src="https://images.pexels.com/photos/1637112/pexels-photo-1637112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="farol 3">
-        <img
-          src="https://images.pexels.com/photos/591383/pexels-photo-591383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="schultz hotel">
-        <img
-          src="https://images.pexels.com/photos/17644420/pexels-photo-17644420/free-photo-of-ciudad-punto-de-referencia-calle-hotel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="autum arc">
-        <img
-          src="https://images.pexels.com/photos/939715/pexels-photo-939715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="rose ridge">
-        <img
-          src="https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="prince's">
-        <img
-          src="https://images.pexels.com/photos/6900887/pexels-photo-6900887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="oriental">
-        <img
-          src="https://images.pexels.com/photos/1488327/pexels-photo-1488327.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="ivory">
-        <img
-          src="https://images.pexels.com/photos/2476632/pexels-photo-2476632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="hotel san francisco">
-        <img
-          src="https://images.pexels.com/photos/594077/pexels-photo-594077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="hotel eurostars">
-        <img
-          src="https://images.pexels.com/photos/1082326/pexels-photo-1082326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="hotel nh">
-        <img
-          src="https://images.pexels.com/photos/381541/pexels-photo-381541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="twin gulf">
-        <img
-          src="https://images.pexels.com/photos/1483145/pexels-photo-1483145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="crown hotel">
-        <img
-          src="https://images.pexels.com/photos/312997/pexels-photo-312997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="silver angel">
-        <img
-          src="https://images.pexels.com/photos/170156/pexels-photo-170156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="breakwater">
-        <img
-          src="https://images.pexels.com/photos/418806/pexels-photo-418806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="excursion hotel">
-
-      </div>
-    </div>
-    <br>
-
-    </br>
+    <h1 style="color:#0078bd">Reservation form
+    </h1>
     <div class="language">
-      <h4>Language</h4><select>
+      <h4>Language
+      </h4>
+      <select>
         <option value="EN">
           EN
         </option>
@@ -395,29 +336,34 @@
     </div>
     <fieldset>
       <legend>Reservation Details</legend>
-      <h2>Contact</h2>
+      <h2>Contact
+      </h2>
       <div class="columns">
         <div class="item">
-          <label for="fname">Contact Name<span>*</span></label> <input id="fname" type="text" name="fname" required="">
+          <label for="fname">Contact Name<span>*</span></label>
+          <input id="fname" type="text" name="fname" required>
         </div>
         <div class="item">
-          <label for="lname">Contact Last Name<span>*</span></label> <input id="lname" type="text" name="lname"
-            required="">
+          <label for="lname">Contact Last Name<span>*</span></label>
+          <input id="lname" type="text" name="lname" required>
         </div>
         <div class="item">
-          <label for="eaddress">Email Address<span>*</span></label> <input id="eaddress" type="text" name="eaddress"
-            required="">
+          <label for="eaddress">Email Address<span>*</span></label>
+          <input id="eaddress" type="text" name="eaddress" required>
         </div>
         <div class="item">
-          <label for="phone">Phone<span>*</span></label> <input id="phone" type="tel" name="phone" required="">
+          <label for="phone">Phone<span>*</span></label>
+          <input id="phone" type="tel" name="phone" required>
         </div>
       </div>
-    </fieldset><br>
+    </fieldset>
+    <br>
     <fieldset>
-      <legend>Booking Information</legend>
+      <legend >Booking Information</legend>
       <div class="columns">
         <div class="item">
-          <label for="address">Hotel's Name</label> <select>
+          <label for="hotels">Hotel's Name</label>
+          <select>
             <option value="0" disabled selected>
               Pick one of our hotels
             </option>
@@ -469,69 +415,62 @@
             <option value="16">
               Excursion Hotel
             </option>
-
           </select>
         </div>
-        <div class="item">
-          <label for="Country">Restaurant<span>*</span></label> <select>
-            <option value="14" disabled selected>
-              Which time moment Do you want to eat?
-            </option>
-            <option value="15">
-              Morning
-            </option>
-            <option value="16">
-              Evening
-            </option>
-            <option value="16">
-              Night
-            </option>
-          </select>
+        <div class="item"> 
+          <label for="checkindate">Check-in Date <span>*</span></label>
+          <input id="checkindate" type="date" name="checkindate" required>
+          <i class="fa-solid fa-calendar-days">
+          </i>
         </div>
         <div class="item">
-          <label for="checkindate">Check-in Date <span>*</span></label> <input id="checkindate" type="date"
-            name="checkindate"><i class="fa-solid fa-calendar-days"></i>
+          <label for="checkoutdate">Check-out Date <span>*</span></label>
+          <input id="checkoutdate"  type="date" name="checkoutdate" required>
+          <i class="fa-solid fa-calendar-days">
+          </i>
         </div>
         <div class="item">
-          <label for="checkoutdate">Check-out Date <span>*</span></label> <input id="checkoutdate" type="date"
-            name="checkoutdate"><i class="fa-solid fa-calendar-days"></i>
-        </div>
-        <div class="item">
-          <label for="label">How many nights are you staying</label> <input id="nights" type="number" name="room">
+          <label for="label">How many nights are you staying</label>
+          <input id="nights" type="number" name="room">
         </div>
         <div class="item" style="width:48%">
-          <label for="room">Number of rooms</label> <input id="room" type="number" name="room">
+          <label for="room">Number of rooms</label>
+          <input id="room" type="number" name="room">
         </div>
         <div class="item" style="width:48%">
-          <label for="room">Number of people in one room</label> <input id="room" type="number" name="room" max="3">
+          <label for="room">Number of people in one room</label>
+          <input id="room" type="number" name="room" max="3">
         </div>
       </div>
-      
-
     </fieldset>
     <br>
     <fieldset>
-      <h2>More Information</h2>
+      <h2>More Information
+      </h2>
       <div class="columns">
         <div class="item" style="width:45%">
-            <label for="room" >How many adults are coming?</label> <input id="room" type="number" name="room">
-          </div>
-        <div class="item" style="width:45%">
-              <label for="room" >How many children are coming?</label> <input id="room" type="number" name="room" max="3">
+          <label for="room">How many adults are coming?</label>
+          <input id="room" type="number" name="room">
         </div>
         <div class="item" style="width:45%">
-          <label for="room">How many minors are coming If there is any</label> <input id="room" type="number" name="room" max="3">
+          <label for="room">How many children are?</label>
+          <input id="room" type="number" name="room" max="3">
         </div>
         <div class="item" style="width:45%">
-          <label for="docChildren">Documentation of the contact</label> <input id="docChildren" type="input"
-            name="docChildren" required="">
+          <label for="room">How many minors are coming?</label>
+          <input id="room" type="number" name="room" max="3">
         </div>
         <div class="item" style="width:45%">
-          <label for="docChildren2">Documentation minors</label> <input id="docChildren2" type="input"
-            name="docChildren2">
+          <label for="docChildren">Documentation of the contact</label>
+          <input id="docChildren" type="input" name="docChildren" required>
         </div>
-        <div class="item" >
-          <label for="currency" style="padding-left:5%">Currency</label> <select>
+        <div class="item" style="width:45%">
+          <label for="docChildren2">Documentation minors</label>
+          <input id="docChildren2" type="input" name="docChildren2">
+        </div>
+        <div class="item">
+          <label for="currency" style="padding-left:5%">Currency</label>
+          <select>
             <option value="23" disabled selected>
               Currency you will pay
             </option>
@@ -549,11 +488,86 @@
             </option>
           </select>
         </div>
+        <div align="center">
+          <a href="https://mchn8kdspj3pfr55f9x132xgkx94.pub.sfmc-content.com/gcsp4radq0d"
+            class="v-button v-size-width v-button-colors v-font-size"
+            style="box-sizing: border-box; margin-left:55%;display: inline-block;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #ffffff; background-color: #19518c; border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;font-size: 14px;"><span
+              style="display:block;padding:10px 20px;line-height:120%;"><strong><span
+                  style="font-size: 14px; line-height: 16.8px;">Submit</span></strong></span></a>
+        </div>
       </div>
-    </fieldset><br>
-    <div class="btn-block">
-      <button type="submit" href="https://mchn8kdspj3pfr55f9x132xgkx94.pub.sfmc-content.com/gcsp4radq0d">Submit</button>
-    </div>
+    </fieldset>
+    <br>
+  </form>
+
+
+  </div>
+  <form class="image-carousel">
+    <div>
+      <img
+        src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Habana grand club">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/1637112/pexels-photo-1637112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="farol 3">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/591383/pexels-photo-591383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="schultz hotel">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/17644420/pexels-photo-17644420/free-photo-of-ciudad-punto-de-referencia-calle-hotel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="autum arc">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/939715/pexels-photo-939715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="rose ridge">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="prince's">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/6900887/pexels-photo-6900887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="oriental">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/1488327/pexels-photo-1488327.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="ivory">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/2476632/pexels-photo-2476632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="hotel san francisco">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/594077/pexels-photo-594077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="hotel eurostars">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/1082326/pexels-photo-1082326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="hotel nh">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/381541/pexels-photo-381541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="twin gulf">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/1483145/pexels-photo-1483145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="crown hotel">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/312997/pexels-photo-312997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="silver angel">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/170156/pexels-photo-170156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="breakwater">
+      <p>Habana Grand Club</p>
+      <img
+        src="https://images.pexels.com/photos/418806/pexels-photo-418806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="excursion hotel">
+      <p>Habana Grand Club</p>
   </form>
 </body>
 
