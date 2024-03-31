@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
+
+  .head_container {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  /*--------------header--------*/
+  header {
+    height: 8vh;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .hambuger {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+  }
+
+  header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header ul li {
+    margin-left: 3rem;
+  }
+
+  header ul li a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    transition: 0.5s;
+  }
+
+  header ul li a:hover {
+    color: #0078bd;
+  }
+
+  @media only screen and (max-width: 768px) {
+    header ul {
+      display: block;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #fff;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.5s;
+      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 20;
+    }
+
+    header ul.active {
+      left: 0%;
+    }
+
+    header ul li {
+      margin: 2.5rem 0;
+    }
+
+    header ul li a {
+      color: black;
+    }
+
+    .hambuger {
+      display: block;
+      cursor: pointer;
+      margin-bottom: 300px;
+    }
+
+    .hambuger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hambuger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hambuger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  /*--------------header--------*/
+  /*--------------home--------*/
+  .home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .home .text {
+    max-width: 50%;
+    color: white;
+    margin: 20% 0 0 10%;
+  }
+
+  .home h1 {
+    font-size: 80px;
+    font-weight: 400;
+  }
+
+  .home p {
+    font-weight: 400;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin: 50px 0 0 50px;
+  }
+
+  .content-slider {
+    width: 100%;
+    height: 250px;
+  }
+
+  .slider {
+    height: 320px;
+    width: 680px;
+    margin: 20px auto 0;
+    overflow: visible;
+    position: relative;
+  }
+
+  .mask {
+    overflow: hidden;
+    height: 320px;
+  }
+
+  .slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .slider li {
+    width: 680px;
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+  }
+
+  .slider .quote {
+    font-size: 30px;
+    font-style: italic;
+  }
+
+  .slider li.anim1 {
+    animation: cycle 15s linear infinite;
+  }
+
+  .slider li.anim2 {
+    animation: cycle2 15s linear infinite;
+  }
+
+  .slider li.anim3 {
+    animation: cycle3 15s linear infinite;
+  }
+
+  .slider li.anim4 {
+    animation: cycle4 15s linear infinite;
+  }
+
+  .slider li.anim5 {
+    animation: cycle5 15s linear infinite;
+  }
+
+
+  .slider:hover li {
+    animation-play-state: paused;
+  }
+
+  @keyframes cycle {
+    0% {
+      top: 0px;
+    }
+
+    4% {
+      top: 0px;
+    }
+
+    16% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+
+    20% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    21% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    50% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    92% {
+      top: -325px;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    96% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    100% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes cycle2 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    16% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    20% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    24% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    36% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+
+    40% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    41% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes cycle3 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    36% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    40% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    44% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    56% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+
+    60% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    61% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes cycle4 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    56% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    60% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    64% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    76% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+
+    80% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+
+    81% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+
+    100% {
+      top: -325px;
+      opacity: 0;
+      z-index: -1;
+    }
+  }
+
+  @keyframes cycle5 {
+    0% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    76% {
+      top: -325px;
+      opacity: 0;
+    }
+
+    80% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    84% {
+      top: 0px;
+      opacity: 1;
+    }
+
+    96% {
+      top: 0px;
+      opacity: 1;
+      z-index: 0;
+    }
+
+    100% {
+      top: 325px;
+      opacity: 0;
+      z-index: 0;
+    }
+  }
+
+  button {
+    padding: 20px 40px;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .home button {
+    margin-left: 50px;
+  }
+
+  .home .image_item {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .home .image_item img {
+    width: 140px;
+    height: 94px;
+    margin: 10px;
+    transition: 0.5s;
+  }
+
+  .home .image_item img.active {
+    border: 2px solid white;
+  }
+
+  .home .box .text {
+    position: relative;
+  }
+
+  .home .box .text::after {
+    position: absolute;
+    content: 'H';
+    font-size: 500px;
+    top: -120%;
+    font-weight: bold;
+    opacity: 0.1;
+  }
+
+  button {
+
+    background-color: #0078bd;
+    border: 2px solid #0078bd;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    left: 48%;
+
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 48px;
+
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  button:focus {
+    color: #171e29;
+  }
+
+  button:hover {
+    background-color: #024dbd;
+    border-color: #013c96;
+    fill: rgb(0, 59, 148);
+  }
+
+  button:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+  }
+
+  @media (min-width: 768px) {
+    button {
+      min-width: 170px;
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+
+  @media (min-width: 1218px) and (max-width: 1220px) {
+    button {
+      min-width: 170px;
+      position: absolute;
+    }
+  }
+
+  input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    outline: none;
+    background: #263760;
+    margin-top: 20px;
+    color: white;
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  .book .search {
+    width: 20%;
+  }
+
+  .book .search input {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .top {
+    margin-top: 10%;
+  }
+
+  .mtop {
+    margin-top: 5%;
+  }
+
+  .left,
+  .right {
+    width: 50%;
+  }
+
+  .about {
+    margin-bottom: 50px;
+  }
+
+  .about .img {
+    position: relative;
+  }
+
+  .about .image1 {
+    width: 310px;
+    height: 450px;
+  }
+
+  .about .image2 {
+    width: 325px;
+    height: 220px;
+    position: absolute;
+    bottom: 5px;
+    z-index: 2;
+    right: 30%;
+  }
+
+  .heading {
+    position: relative;
+  }
+
+  .heading::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: #0078bd;
+  }
+
+  .heading h5 {
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 20px;
+    color: #5f5f5f;
+  }
+
+  .heading h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 20px 0 40px 0;
+    color: #222222;
+  }
+
+  .heading p {
+    margin-bottom: 20px;
+    line-height: 25px;
+    color: #0078bd;
+    margin: 0 0 20px 50px;
+  }
+
+  .heading .btn1 {
+    margin: 50px 0 20px 50px;
+  }
+
+  .btn1 {
+    background: #0078bd;
+    color: white;
+  }
+
+  .image-carousel img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  .image-carousel {
+    width: 100%;
+    height: 20em;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .overlay-text {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    z-index: 10;
+  }
+
+footer {
+  background-color: #024dbd;
+  padding-bottom: 20px;
+}
+
+  footer h3 {
+    margin-bottom: 20px;
+    margin-left: 48%;
+  }
+
+  footer li {
+    margin-bottom: 15px;
+    margin-left: 48%;
+    transition: 0.5s;
+  }
+
+  footer li:hover {
+    color: #0078bd;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width:768px) {
+    .home .box .text {
+      max-width: 100%;
+    }
+
+    .home .box .text::after,
+    .home .image_item {
+      display: none;
+    }
+
+    .container,
+    .about .container,
+    .book .container {
+      flex-direction: column;
+    }
+
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book {
+      margin-top: 10%;
+      height: auto;
+    }
+
+    .book .search {
+      width: 100%;
+    }
+
+
+    @media (min-width: 768px) {
+      button {
+        padding: 16px 32px;
+      }
+    }
+
+  }
+
+  @media only screen and (max-width:768px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .home .text {
+      margin: 10% 0 0 0;
+    }
+
+    .home h1 {
+      font-size: 40px;
+    }
+
+    .about p,
+    .home p {
+      margin: 50px 0 0 0;
+    }
+
+
+    .heading_top {
+      margin-top: 100px;
+    }
+
+    .heading_top button {
+      display: none;
+    }
+
+
+  }
+</style>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <img src="https://www.marketingonline.academy/wp-content/uploads/2021/08/moa-ico.png" alt="logoMoa"
+          style="width:250px">
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#about" class="nav-link">About</a> </li>
+
+
+          <li> <a href="#gallery" class="nav-link">Gallery</a> </li>
+          <li> <a href="#contact" class="nav-link">Contact</a> </li>
+        </ul>
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <div class="content-slider">
+            <div class="slider">
+              <div class="mask">
+                <ul>
+                  <li class="anim1">
+                    <div class="quote">Welcome, Bienvenido/a</div>
+
+                  </li>
+                  <li class="anim2">
+                    <div class="quote">Benvingut/da, Bem-vindo</div>
+
+                  </li>
+                  <li class="anim3">
+                    <div class="quote">Benvenuto/a, Bienvenue</div>
+
+                  </li>
+                  <li class="anim4">
+                    <div class="quote">Добро пожаловать</div>
+
+                  </li>
+                  <li class="anim5">
+                    <div class="quote">Willkommen</div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>Welcome to MOA Hotels, where luxury meets family-friendly charm. Our hotels are located in prime
+            destinations, offering a perfect blend of sophistication and fun for both adults and children. From spacious
+            accommodations to exciting kids' clubs and upscale amenities, we cater to every member of the family.
+            Whether you seek relaxation or adventure, MOA Hotels promises an unforgettable stay for guests of all ages.
+          </p>
+
+        </div>
+      </div>
+      <div class="image">
+        <img src="https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/6f062380-8fe4-4998-a1fb-046547348148.jpg" class="slide">
+      </div>
+      <div class="image_item">
+        <img src="https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/223cef82-d249-468c-8cc7-31f919e254d6.jpg" alt="" class="slide active" onclick="img('https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/223cef82-d249-468c-8cc7-31f919e254d6.jpg')">
+        <img src="https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/75ec6f15-ea8d-4204-b2aa-72e98eaac1b7.jpg" alt="" class="slide" onclick="img('https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/75ec6f15-ea8d-4204-b2aa-72e98eaac1b7.jpg')">
+        <img src="https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/e05843f4-0763-4e25-b79d-9a519fe3a5c1.jpg" alt="" class="slide" onclick="img('https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/e05843f4-0763-4e25-b79d-9a519fe3a5c1.jpg')">
+        <img src="https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/c08e9930-c0ce-48c6-90a7-2acbf196b239.jpg" alt="" class="slide" onclick="img('https://image.s10.sfmc-content.com/lib/fe37117170640579761574/m/1/c08e9930-c0ce-48c6-90a7-2acbf196b239.jpg')">
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+  <button onclick="location.href='https://mchn8kdspj3pfr55f9x132xgkx94.pub.sfmc-content.com/r5ve2cqv55s'" type="button">
+    Book your room</button>
+ 
+  </div>
+  </div>
+  </section>
+  <section class="about top" id="about">
+    <div class="container flex">
+      <div class="right">
+        <div class="heading">
+          <h5>RAISING COMFOMRT TO THE HIGHEST LEVEL</h5>
+          <h2>Welcome to MOA Hotels</h2>
+          <p>At MOA Hotels, we understand the importance of catering to every member of the family. From spacious
+            accommodations designed with families in mind to a wide array of amenities and activities, we strive to
+            create an atmosphere where both adults and children can relax, unwind, and indulge in the ultimate vacation
+            experience.
+          </p>
+          </br>
+          <p>
+            Indulge in our upscale facilities, including rejuvenating spas, exquisite dining options featuring
+            mouthwatering cuisine from around the world, and state-of-the-art fitness centers. Meanwhile, children can
+            embark on thrilling adventures at our dedicated kids' clubs, splash around in our sparkling pools, or engage
+            in a variety of supervised activities designed to spark their imagination and create lasting memories.
+          </p>
+          </br>
+          <p>
+            Whether you're traveling for business, pleasure, or a combination of both, MOA Hotels ensures a seamless
+            blend of luxury and family-friendly hospitality. Come discover a world of endless possibilities where adults
+            can unwind and rejuvenate while children embark on exciting adventures, all under one roof at MOA Hotels.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallary mtop " id="gallery">
+    <div class="container">
+      <div class="heading_top flex1">
+        <div class="heading">
+          <h5>WELCOME TO OUR PHOTO GALLERY</h5>
+          <h2>Photo Gallery of Our Hotel</h2>
+        </div>
+
+      </div>
+
+      <div class="image-carousel">
+        <img
+          src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="Habana grand club">
+        <img
+          src="https://images.pexels.com/photos/1637112/pexels-photo-1637112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="farol 3">
+        <img
+          src="https://images.pexels.com/photos/591383/pexels-photo-591383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="schultz hotel">
+        <img
+          src="https://images.pexels.com/photos/17644420/pexels-photo-17644420/free-photo-of-ciudad-punto-de-referencia-calle-hotel.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="autum arc">
+        <img
+          src="https://images.pexels.com/photos/939715/pexels-photo-939715.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="rose ridge">
+        <img
+          src="https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="prince's">
+        <img
+          src="https://images.pexels.com/photos/6900887/pexels-photo-6900887.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="oriental">
+        <img
+          src="https://images.pexels.com/photos/1488327/pexels-photo-1488327.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="ivory">
+        <img
+          src="https://images.pexels.com/photos/2476632/pexels-photo-2476632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="hotel san francisco">
+        <img
+          src="https://images.pexels.com/photos/594077/pexels-photo-594077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="hotel eurostars">
+        <img
+          src="https://images.pexels.com/photos/1082326/pexels-photo-1082326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="hotel nh">
+        <img
+          src="https://images.pexels.com/photos/381541/pexels-photo-381541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="twin gulf">
+        <img
+          src="https://images.pexels.com/photos/1483145/pexels-photo-1483145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="crown hotel">
+        <img
+          src="https://images.pexels.com/photos/312997/pexels-photo-312997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="silver angel">
+        <img
+          src="https://images.pexels.com/photos/170156/pexels-photo-170156.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="breakwater">
+        <img
+          src="https://images.pexels.com/photos/418806/pexels-photo-418806.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="excursion hotel">
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+
+        <div class="box" id="contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><i class="far fa-envelope" style="margin-right:10px"></i>moahotelsinfo@gmail.com </li>
+            <li><i class="far fa-phone-alt" style="margin-right:10px"></i>51577622 </li>
+            <li><i class="far fa-comments" style="margin-right:10px"></i>24/ 7 Customer Services </li>
+          </ul>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>
